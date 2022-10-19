@@ -14,6 +14,16 @@
         android:layout_weight="1.5"
         android:weightSum="1"
         >
+        <Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/dark_brown"
+            android:elevation="4dp"
+            android:title="@string/welcome"
+            android:titleTextColor="@color/primary_white"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
         <ImageView
             android:id="@+id/imageView2"
@@ -87,6 +97,7 @@
             android:letterSpacing="0.2"
             android:textSize="20dp"
             android:text="@string/start_ordering" />
+
 
     </LinearLayout>
 

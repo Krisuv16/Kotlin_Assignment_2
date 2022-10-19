@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="main_title">45sp</dimen>
+    <dimen name="main_subtitle">32sp</dimen>
     <dimen name="small_content">16sp</dimen>
     <dimen name="label_title_medium">20sp</dimen>
 </resources>
