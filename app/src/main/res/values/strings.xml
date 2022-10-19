@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Krisuv_Bohara_ MAPD711_Assignment2_CoffeeOnline</string>
+    <string name="store_name">Himalayan Java</string>
+    <string name="about_us_title">About Us</string>
+    <string name="about_us_content">Himalayan Java is the first specialty coffeehouse in Nepal. With a strong core belief of socially responsible entrepreneurship,
+        our mission is to promote the fledgling Nepalese coffee industry by investing in people from grower to consumer and to create awareness of promoting Nepalese coffee
+        domestically and in an international niche market. Taste and See Coffee Shop and Gallery offers a unique coffee house environment unlike any other in Macon.
+        We are not only a place to drop in and get your morning cup of coffee (although you are more than welcome to do that),
+        we are a place where you can sit down and enjoy that tailor-made cup of coffee. If you need to work, we have a seating area created specifically for you.
+        If you need to rest, we have a soft-seating area in front of a stone fire place that is perfect for your weary mind and body.
+        We offer a delicious variety of coffee from Safehouse Coffee made by our professionally trained baristas.
+        We have everything from classic coffee to our house made specialty beverages.
+        All of our sauces and syrups are made in-house with all natural ingredients (no chemicals or preservatives)
+        ensuring you the highest quality in taste and health.  You can complete your coffee with one of our delicious sweet treats made by our very own baker. We look forward to serving you at Taste
+        and See Coffee Shop and Gallery! </string>
+
+    <string name="start_ordering">Start Ordering</string>
+
+</resources>
+
+
