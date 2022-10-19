@@ -8,5 +8,7 @@ class MainScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_screen)
+        setTitle(R.string.store_name)
     }
+    
 }
