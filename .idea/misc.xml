@@ -6,9 +6,13 @@
         <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/drawable/chip_background.xml" value="0.1705" />
         <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/drawable/custom_button.xml" value="0.2545" />
         <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/layout/fragment_order_one.xml" value="0.25" />
+        <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/layout/fragment_order_screen_one.xml" value="0.25" />
+        <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/layout/fragment_order_screen_two.xml" value="0.264" />
         <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/layout/layout.xml" value="0.16944444444444445" />
         <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/layout/main_screen.xml" value="0.2" />
-        <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/layout/order_screen.xml" value="0.2" />
+        <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/layout/order_screen.xml" value="0.264" />
+        <entry key="..\:/Centennial/Samsung/Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline/app/src/main/res/layout/order_segment.xml" value="0.24895833333333334" />
       </map>
     </option>
   </component>

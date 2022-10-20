@@ -13,7 +13,7 @@ class MainScreen : AppCompatActivity() {
         setContentView(R.layout.main_screen)
         val btnClick = findViewById<View>(R.id.outlinedButton) as Button
         btnClick.setOnClickListener {
-            val intent = Intent(this, OrderScreen:: class.java)
+            val intent = Intent(this, OrderSegment:: class.java)
             startActivity(intent)
         }
     }

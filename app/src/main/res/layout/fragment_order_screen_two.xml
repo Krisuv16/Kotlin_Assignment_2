@@ -1,0 +1,306 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/light_brown"
+tools:context=".fragments.OrderScreenTwo">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:background="@color/light_brown"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/dark_brown"
+        android:elevation="4dp"
+        android:title="@string/pay"
+        android:titleTextColor="@color/primary_white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/enter_pickup_info"
+            android:textColor="@color/dark_brown"
+            android:textSize="@dimen/main_subtitle"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/full_name"
+            android:textColor="@color/dark_brown"
+            android:textSize="@dimen/label_title_medium"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <EditText
+            android:id="@+id/fullNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:paddingVertical="20dp"
+            android:text=""
+            android:textColor="@color/medium_brown"
+            android:hint="@string/full_name"
+            android:inputType="textPersonName"
+            android:cursorVisible="false"
+            android:backgroundTint="@color/medium_brown"
+            android:textColorHint="@color/medium_brown"
+            app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+
+        <TextView
+            android:id="@+id/phoneNumberTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/phone_number"
+            android:textColor="@color/dark_brown"
+            android:textSize="@dimen/label_title_medium"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameEditText"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <EditText
+            android:id="@+id/phoneNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:paddingVertical="20dp"
+            android:text=""
+            android:maxLength="10"
+            android:textColor="@color/medium_brown"
+            android:hint="@string/phone_number"
+            android:inputType = "phone"
+            android:cursorVisible="false"
+            android:backgroundTint="@color/medium_brown"
+            android:textColorHint="@color/medium_brown"
+            app:layout_constraintTop_toBottomOf="@id/phoneNumberTextView" />
+
+        <TextView
+            android:id="@+id/pickUpTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="@string/pickup_time"
+            android:textColor="@color/dark_brown"
+            android:textSize="@dimen/label_title_medium"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:timePickerMode="spinner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pickUpTextView" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutScreenTwo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/timePicker1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paymentInfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/payment_info"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/main_subtitle"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayoutScreenTwo" />
+
+            <TextView
+                android:id="@+id/cardInfoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/card_type"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/label_title_medium"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paymentInfoTextView" />
+
+
+            <Spinner
+                android:id="@+id/spinnerDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="textStart"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/medium_brown"
+                android:entries="@array/card_arrays"
+                android:layout_weight="2"
+                app:layout_constraintTop_toBottomOf="@+id/cardInfoTextView"/>
+
+            <TextView
+                android:id="@+id/cardNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/card_number"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/label_title_medium"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerDropDown" />
+
+            <EditText
+                android:id="@+id/cardNumberEditText"
+                android:layout_width="match_parent"
+                android:maxLength="16"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="30dp"
+                android:paddingVertical="20dp"
+                android:text=""
+                android:textColor="@color/medium_brown"
+                android:hint="@string/card_number"
+                android:inputType="number"
+                android:cursorVisible="false"
+                android:backgroundTint="@color/medium_brown"
+                android:textColorHint="@color/medium_brown"
+                app:layout_constraintTop_toBottomOf="@id/cardNumberTextView" />
+
+            <TextView
+                android:id="@+id/cardExpiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/card_expiry"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/label_title_medium"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardNumberEditText" />
+
+            <LinearLayout
+                android:id="@+id/monthYearLayout"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/monthEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:paddingVertical="20dp"
+                    android:text=""
+                    android:textColor="@color/medium_brown"
+                    android:hint="@string/month"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:cursorVisible="false"
+                    android:backgroundTint="@color/medium_brown"
+                    android:textColorHint="@color/medium_brown"
+                    app:layout_constraintTop_toBottomOf="@id/monthYearLayout" />
+
+                <TextView
+                    android:id="@+id/slash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="/"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="@dimen/label_title_medium"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardNumberEditText" />
+
+                <EditText
+                    android:id="@+id/yearEditText"
+                    android:layout_width="wrap_content"
+                    android:maxLength="4"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:paddingVertical="20dp"
+                    android:text=""
+                    android:textColor="@color/medium_brown"
+                    android:hint="@string/year"
+                    android:inputType="number"
+                    android:cursorVisible="false"
+                    android:backgroundTint="@color/medium_brown"
+                    android:textColorHint="@color/medium_brown"
+                    app:layout_constraintTop_toBottomOf="@id/monthYearLayout" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ccvEditText"
+                android:layout_width="match_parent"
+                android:maxLength="3"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="30dp"
+                android:paddingVertical="20dp"
+                android:text=""
+                android:textColor="@color/medium_brown"
+                android:hint="@string/ccv"
+                android:inputType="numberPassword"
+                android:cursorVisible="false"
+                android:backgroundTint="@color/medium_brown"
+                android:textColorHint="@color/medium_brown"
+                app:layout_constraintTop_toBottomOf="@id/yearEditText" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/continueTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/custom_button"
+            android:letterSpacing="0.2"
+            android:text="@string/continue_btn"
+            android:textColor="@color/primary_white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayoutScreenTwo"
+            tools:layout_editor_absoluteX="20dp" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

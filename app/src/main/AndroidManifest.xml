@@ -20,6 +20,7 @@
         </intent-filter>
     </activity>
         <activity android:name=".OrderScreen" android:exported="true"/>
+        <activity android:name=".OrderSegment" android:exported="true"/>
     </application>
 
 </manifest>

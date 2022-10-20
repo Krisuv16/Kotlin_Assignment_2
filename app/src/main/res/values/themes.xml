@@ -10,12 +10,17 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" >@color/dark_brown</item>
+        <item name="android:statusBarColor">@color/dark_brown</item>
         <!-- Customize your theme here. -->
     </style>
 
     <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Filter">
         <item name="android:textColor">@color/chip_text</item>
         <item name="chipBackgroundColor">@color/chip_background</item>
+    </style>
+
+    <style name="ThemeOverlay.Krisuv_Bohara_MAPD711_Assignment2_CoffeeOnline.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
     </style>
 </resources>
