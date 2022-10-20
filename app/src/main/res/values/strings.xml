@@ -2,6 +2,45 @@
     <string name="app_name">Krisuv_Bohara_ MAPD711_Assignment2_CoffeeOnline</string>
     <string name="store_name">Himalayan Java</string>
     <string name="about_us_title">About Us</string>
+    <string name="welcome">Welcome</string>
+    <string name="order">Order</string>
+    <string name="summary">Summary</string>
+    <string name="pay">Pay</string>
+
+    <string name="americano">Americano</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="latte">Latte</string>
+    <string name="macchiato">Macchiato</string>
+
+    <string name="two_shots">2 Shots</string>
+    <string name="sugar">Sugar</string>
+    <string name="cream">Cream</string>
+    <string name="whole_milk">Whole Milk</string>
+    <string name="two_per_milk">2% Milk</string>
+    <string name="non_fat_milk">Non Fat Milk</string>
+    <string name="almond_milk">Almond Milk</string>
+
+
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+
+    <string name="select_coffee">Select a Coffee</string>
+    <string name="select_size">Select a Size</string>
+    <string name="options">Options</string>
+    <string name="enter_pickup_info">Enter Pickup Info</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="pickup_time">Pickup Time</string>
+    <string name="payment_info">Enter Payment Info</string>
+    <string name="card_type">Card Type</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_expiry">Card Expiry</string>
+    <string name="month">MM</string>
+    <string name="year">YYYY</string>
+    <string name="ccv">CCV</string>
+
+
     <string name="about_us_content">Himalayan Java is the first specialty coffeehouse in Nepal. With a strong core belief of socially responsible entrepreneurship,
         our mission is to promote the fledgling Nepalese coffee industry by investing in people from grower to consumer and to create awareness of promoting Nepalese coffee
         domestically and in an international niche market. Taste and See Coffee Shop and Gallery offers a unique coffee house environment unlike any other in Macon.
@@ -14,7 +53,19 @@
         ensuring you the highest quality in taste and health.  You can complete your coffee with one of our delicious sweet treats made by our very own baker. We look forward to serving you at Taste
         and See Coffee Shop and Gallery! </string>
 
-    <string name="start_ordering">Start Ordering</string>
+    <array name="card_arrays">
+        <item>Visa</item>
+        <item>MasterCard</item>
+    </array>
+
+    <string name="start_ordering">START ORDERING</string>
+    <string name="continue_btn">CONTINUE</string>
+    <string name="place_order">PLACE ORDER</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
 

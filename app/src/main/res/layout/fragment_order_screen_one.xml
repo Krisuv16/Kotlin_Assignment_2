@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+    tools:context=".MainScreen">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:background="@color/light_brown"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/dark_brown"
+            android:elevation="4dp"
+            android:title="@string/order"
+            android:titleTextColor="@color/primary_white"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/select_coffee"
+            android:textColor="@color/dark_brown"
+            android:textSize="@dimen/main_subtitle"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="60dp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                style="@style/CustomChipStyle"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="@string/americano"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="4dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/CustomChipStyle"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="@string/cappuccino"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="4dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/CustomChipStyle"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="@string/latte"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="4dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                style="@style/CustomChipStyle"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="@string/macchiato"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:checkedIconEnabled="false"
+                app:chipStrokeWidth="4dp" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:visibility="gone"
+            android:layout_marginEnd="40dp"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chipGroup">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/select_size"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/main_subtitle"
+                android:textStyle="bold|italic"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewOne3"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerOne">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/dark_brown"
+                    android:text="@string/small"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="@dimen/small_content"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/dark_brown"
+                    android:text="@string/medium"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="@dimen/small_content"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/dark_brown"
+                    android:text="@string/large"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="@dimen/small_content"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:visibility="gone"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="50dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/options"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/main_subtitle"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/twoShots"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/dark_brown"
+                android:text="@string/two_shots"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/label_title_medium"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/sugar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/dark_brown"
+                android:text="@string/sugar"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/label_title_medium"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/cream"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/dark_brown"
+                android:text="@string/cream"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/label_title_medium"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/wholeMilk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/dark_brown"
+                android:text="@string/whole_milk"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/label_title_medium"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/twoPercentMilk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/dark_brown"
+                android:text="@string/two_per_milk"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/label_title_medium"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/nonFatMilk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/dark_brown"
+                android:text="@string/non_fat_milk"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/label_title_medium"
+                android:textStyle="bold|italic" />
+
+            <CheckBox
+                android:id="@+id/almondMilk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:buttonTint="@color/dark_brown"
+                android:text="@string/almond_milk"
+                android:textColor="@color/dark_brown"
+                android:textSize="@dimen/label_title_medium"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/continueOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/custom_button"
+            android:letterSpacing="0.2"
+            android:text="@string/continue_btn"
+            android:textColor="@color/primary_white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
