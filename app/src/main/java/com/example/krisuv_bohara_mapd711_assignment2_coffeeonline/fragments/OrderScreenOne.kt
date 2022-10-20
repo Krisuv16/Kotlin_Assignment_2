@@ -28,6 +28,9 @@ class OrderScreenOne : Fragment() {
 
     private var layoutOne: LinearLayout? = null
     private var layoutTwo: LinearLayout? = null
+    private val hashMap = HashMap<String, String>()
+    private val selectedCheckboxes: ArrayList<String> = ArrayList()
+    private var co = String()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,6 +40,7 @@ class OrderScreenOne : Fragment() {
 
         chipGroup = view.findViewById<View>(R.id.chipGroup) as ChipGroup
         radioGroup = view.findViewById<View>(R.id.radioGroup1) as RadioGroup
+
         twoShots = view.findViewById<View>(R.id.twoShots) as CheckBox
         sugar = view.findViewById<View>(R.id.sugar) as CheckBox
         cream = view.findViewById<View>(R.id.cream) as CheckBox
@@ -44,12 +48,16 @@ class OrderScreenOne : Fragment() {
         twoPerMilk = view.findViewById<View>(R.id.twoPercentMilk) as CheckBox
         nonFatMilk = view.findViewById<View>(R.id.nonFatMilk) as CheckBox
         almondMilk = view.findViewById<View>(R.id.almondMilk) as CheckBox
-        val continueBtn = view.findViewById<View>(R.id.continueOne) as Button
+
         layoutOne = view.findViewById<View>(R.id.linearLayout) as LinearLayout
         layoutTwo = view.findViewById<View>(R.id.linearLayout2) as LinearLayout
+        val continueBtn = view.findViewById<View>(R.id.continueOne) as Button
 
 
         continueBtn.setOnClickListener{
+            co = ""
+            hashMap.clear()
+            selectedCheckboxes.clear()
             if(chip == null ){
                 Toast.makeText(activity, "Please Select a Coffee", Toast.LENGTH_SHORT).show()
             }else if(radioButton == null ){
@@ -57,9 +65,51 @@ class OrderScreenOne : Fragment() {
             }else if(!twoShots!!.isChecked && !sugar!!.isChecked && !cream!!.isChecked && !wholeMilk!!.isChecked  && !twoPerMilk!!.isChecked  && !nonFatMilk!!.isChecked  && !almondMilk!!.isChecked ) {
                 Toast.makeText(activity, "Please Select atLeast one Option", Toast.LENGTH_SHORT).show()
             }else{
+                if(twoShots!!.isChecked){
+                   selectedCheckboxes.add(twoShots!!.text.toString())
+                }else{
+                    selectedCheckboxes.remove(twoShots!!.text.toString())
+                }
+                if(sugar!!.isChecked){
+                    selectedCheckboxes.add(sugar!!.text.toString())
+                }else{
+                    selectedCheckboxes.remove(sugar!!.text.toString())
+                }
+                if(cream!!.isChecked){
+                    selectedCheckboxes.add(cream!!.text.toString())
+                }else{
+                    selectedCheckboxes.remove(cream!!.text.toString())
+                }
+                if(wholeMilk!!.isChecked){
+                    selectedCheckboxes.add(wholeMilk!!.text.toString())
+                }else{
+                    selectedCheckboxes.remove(wholeMilk!!.text.toString())
+                }
+                if(twoPerMilk!!.isChecked){
+                    selectedCheckboxes.add(twoPerMilk!!.text.toString())
+                }else{
+                    selectedCheckboxes.remove(twoPerMilk!!.text.toString())
+                }
+                if(nonFatMilk!!.isChecked){
+                    selectedCheckboxes.add(nonFatMilk!!.text.toString())
+                }else{
+                    selectedCheckboxes.remove(nonFatMilk!!.text.toString())
+                }
+                if(almondMilk!!.isChecked){
+                    selectedCheckboxes.add(almondMilk!!.text.toString())
+                }else{
+                    selectedCheckboxes.remove(almondMilk!!.text.toString())
+                }
+
+                co = selectedCheckboxes.joinToString()
+
+
+                hashMap["coffee"] = chip!!.text.toString()
+                hashMap["size"] = radioButton!!.text.toString()
+                hashMap["options"] = co
                 val ldf = OrderScreenTwo()
                 val args = Bundle()
-                args.putString("YourKey", "YourValue")
+                args.putSerializable("orderScreenOneMap", hashMap)
                 ldf.arguments = args
 
                 activity?.supportFragmentManager?.beginTransaction()
@@ -87,7 +137,6 @@ class OrderScreenOne : Fragment() {
                 layoutTwo!!.visibility = View.GONE
             }
         }
-
         return  view;
     }
 
@@ -102,6 +151,9 @@ class OrderScreenOne : Fragment() {
         twoPerMilk!!.isChecked = false
         nonFatMilk!!.isChecked = false
         almondMilk!!.isChecked = false
+        co = ""
+        selectedCheckboxes.clear()
+        hashMap.clear()
     }
 
 

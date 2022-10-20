@@ -4,6 +4,7 @@
     <string name="about_us_title">About Us</string>
     <string name="welcome">Welcome</string>
     <string name="order">Order</string>
+    <string name="summary">Summary</string>
     <string name="pay">Pay</string>
 
     <string name="americano">Americano</string>
@@ -59,6 +60,8 @@
 
     <string name="start_ordering">START ORDERING</string>
     <string name="continue_btn">CONTINUE</string>
+    <string name="place_order">PLACE ORDER</string>
+
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <!-- TODO: Remove or change this placeholder text -->

@@ -242,7 +242,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:buttonTint="@color/dark_brown"
-                android:text="@string/two_shots"
+                android:text="@string/two_per_milk"
                 android:textColor="@color/dark_brown"
                 android:textSize="@dimen/label_title_medium"
                 android:textStyle="bold|italic" />
