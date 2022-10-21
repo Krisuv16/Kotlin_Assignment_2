@@ -13,16 +13,28 @@ class OrderScreenThree : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+        /**
+         * Creates and returns the view associated with third fragment order screen
+         */
         val view =  inflater.inflate(R.layout.fragment_order_screen_three, container, false)
+
+        /**
+         * Return the arguments supplied from OrderScreenTwo Fragments
+         */
         val b = this.arguments
+
+        /**
+         * Access value transferred from order screen one and two
+         */
         var screenOneMap: HashMap<String, String> = HashMap()
         screenOneMap =  b!!.getSerializable("orderScreenOneMap") as HashMap<String, String>
 
         var screenTwoMap: HashMap<String, String> = HashMap()
         screenTwoMap =  b.getSerializable("orderScreenTwoMap") as HashMap<String, String>
 
-
+        /**
+         * access properties of text views
+         */
         val fullName = view.findViewById<View>(R.id.fullNameValue) as TextView
         val phoneNumber = view.findViewById<View>(R.id.phoneNumberValue) as TextView
         val pickUpTime = view.findViewById<View>(R.id.pickUpTimeValue) as TextView
